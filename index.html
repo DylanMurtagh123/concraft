@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONCRAFT — Main Contractor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="site">
+  <div class="nav">
+    <a class="logo" href="#top" aria-label="CONCRAFT home">
+      <img src="images/logo-concraft.png" alt="CONCRAFT" class="logo-icon">
+    </a>
+    <div class="nav-actions">
+      <a class="cta-btn ghost call-btn" href="tel:+447729001401" aria-label="Call CONCRAFT on 07729 001401">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="call-btn-text">07729 001401</span>
+      </a>
+      <a class="cta-btn" href="#contact">Get a quote</a>
+      <button class="burger" id="burgerBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteMenu">
+        <span class="burger-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="site-menu" id="siteMenu" aria-label="Page sections">
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#standards">Quality &amp; Standards</a></li>
+      <li>
+        <a href="#services">Our Services</a>
+        <ul class="menu-sub">
+          <li><a href="#svc-design">Design &amp; Planning</a></li>
+          <li><a href="#svc-loft">Loft &amp; Extensions</a></li>
+          <li><a href="#svc-renovation">Renovation &amp; Refurbishment</a></li>
+          <li><a href="#svc-landscaping">Landscaping &amp; Outdoor Works</a></li>
+          <li><a href="#svc-maintenance">General Building &amp; Maintenance</a></li>
+        </ul>
+      </li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#reviews">Client Reviews</a></li>
+      <li><a href="#process">How We Work</a></li>
+      <li><a href="#projects">Recent Work</a></li>
+      <li><a href="#before-after">Before &amp; After</a></li>
+      <li><a href="#why">Why CONCRAFT</a></li>
+      <li><a href="#find-us">Find Us</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Get in Touch</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <img src="images/hero-house.jpg" alt="Modern detached house with black timber cladding, a brick ground floor, black garage door and a new porcelain-paved driveway" width="1448" height="1086" fetchpriority="high">
+  <div class="hero-inner">
+    <div class="hero-bottom">
+      <div class="hero-panel">
+        <div class="hero-eyebrow"><span class="rule"></span>MAIN CONTRACTOR &mdash; ESSEX &amp; LONDON</div>
+        <div class="hero-brand">CONCRAFT</div>
+        <h1 class="hero-title">Built to plan.<br>Managed to the last detail.</h1>
+      </div>
+      <div class="hero-actions">
+        <div class="hero-ctas">
+          <a class="cta-btn" href="#contact">Request a site assessment</a>
+          <a class="cta-btn ghost" href="#projects">View our projects</a>
+        </div>
+        <div class="hero-rating">
+          <span class="hero-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="hero-rating-text">5 Stars on over 200 Projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="standards" id="standards" aria-labelledby="standardsTitle">
+  <div class="wrap">
+    <h2 class="standards-title" id="standardsTitle">Quality &amp; Standards</h2>
+    <ul class="standards-grid reveal-list">
+      <li>
+        <div class="std-box">
+          <div class="std-figure">15+</div>
+          <p class="std-label">Years Delivering Projects</p>
+        </div>
+      </li>
+      <li>
+        <div class="std-box">
+          <div class="std-figure">200+</div>
+          <p class="std-label">Projects Completed</p>
+        </div>
+      </li>
+      <li>
+        <div class="std-box">
+          <div class="std-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.2-7.5 9.5-4.4-1.3-7.5-4.9-7.5-9.5V6L12 3z"/><path d="M8.5 12.2l2.5 2.5 4.5-5"/></svg></div>
+          <p class="std-label">Fully Insured &amp; Accredited Trades</p>
+        </div>
+      </li>
+      <li>
+        <div class="std-box">
+          <div class="std-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.6-4 3.6-6.5 7.5-6.5s6.9 2.5 7.5 6.5"/></svg></div>
+          <p class="std-label">One Point of Contact From Start to Finish</p>
+        </div>
+      </li>
+      <li>
+        <div class="std-box">
+          <div class="std-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6L7 21l5-2.8 5 2.8-1.6-7.4"/></svg></div>
+          <p class="std-label">Quality Workmanship</p>
+        </div>
+      </li>
+      <li>
+        <div class="std-box">
+          <div class="std-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4.5" width="14" height="17" rx="2"/><path d="M9 4.5V3.5h6v1"/><path d="M8.8 11.5l1.4 1.4 2.4-2.6"/><path d="M8.8 17h6.4"/></svg></div>
+          <p class="std-label">Professional Project Management</p>
+        </div>
+      </li>
+      <li>
+        <div class="std-box">
+          <div class="std-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16a7.5 7.5 0 0115 0"/><path d="M2.5 16h19v3h-19z"/><path d="M10 8.6V5h4v3.6"/></svg></div>
+          <p class="std-label">Health &amp; Safety Focused</p>
+        </div>
+      </li>
+      <li>
+        <div class="std-box">
+          <div class="std-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 011 1v9a1 1 0 01-1 1H10.5L5.5 20v-4H4a1 1 0 01-1-1V6a1 1 0 011-1z"/><path d="M7.5 9.5h9"/><path d="M7.5 12.5h5.5"/></svg></div>
+          <p class="std-label">Clear Communication &amp; Transparent Pricing</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="strip-inner">
+    <div class="strip-item">
+      <div class="strip-num">15+</div>
+      <div class="strip-label">Years delivering projects</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-num strip-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="strip-label">Reviews on Google &amp; Trustpilot</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-num">100%</div>
+      <div class="strip-label">Insured &amp; accredited trades</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-num">01</div>
+      <div class="strip-label">Point of contact, start to finish</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-tag"><span class="rule"></span>Our Services</div>
+        <h2 class="sec-title">From First Plans to Final Finish</h2>
+      </div>
+      <p class="sec-desc">Whichever stage your building is at, we plan, manage and build it under a single team &mdash; no gaps between trades, no gaps in accountability.</p>
+    </div>
+
+    <div class="services-grid2">
+      <div class="svc2-card">
+        <div class="svc2-photo">
+          <img src="images/service-design.jpg" alt="Open-plan kitchen and dining extension with island and wishbone chairs">
+        </div>
+        <div class="svc2-body">
+          <div class="svc2-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6.6" r="2.2"/><path d="M12 8.8 6.2 19.5M12 8.8l5.8 10.7M6.2 19.5h11.6"/></svg></div>
+          <h3 class="svc2-title">Design &amp; Planning</h3>
+          <p class="svc2-desc">Concept design, drawings and planning applications handled from the outset, so every project starts with a clear, approved plan.</p>
+          <a class="svc2-link" href="#svc-design">Read more <span class="svc2-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="svc2-card">
+        <div class="svc2-photo">
+          <img src="images/service-loft.jpg" alt="Rear extension with bi-fold doors and loft dormer conversion above">
+        </div>
+        <div class="svc2-body">
+          <div class="svc2-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="6.6" width="4" height="3" rx=".6"/></svg></div>
+          <h3 class="svc2-title">Loft &amp; Extensions</h3>
+          <p class="svc2-desc">Single and double-storey extensions, loft conversions and dormers, designed and built to add lasting space and value.</p>
+          <a class="svc2-link" href="#svc-loft">Read more <span class="svc2-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="svc2-card">
+        <div class="svc2-photo">
+          <img src="images/service-renovation.jpg" alt="Open-plan kitchen and living space renovation with island and bi-fold doors">
+        </div>
+        <div class="svc2-body">
+          <div class="svc2-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 7 3-3 3 3-3 3"/><path d="M13 8.4 4.5 17a1.5 1.5 0 0 0 2 2L15 10.4"/><path d="m11 10 3 3"/></svg></div>
+          <h3 class="svc2-title">Renovation &amp; Refurbishment</h3>
+          <p class="svc2-desc">Full property renovations and refurbishments for homeowners, landlords and developers, finished to a standard that holds up under close inspection.</p>
+          <a class="svc2-link" href="#svc-renovation">Read more <span class="svc2-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="svc2-card">
+        <div class="svc2-photo">
+          <img src="images/service-landscaping.jpg" alt="Landscaped garden with composite decking, patio seating and new fencing">
+        </div>
+        <div class="svc2-body">
+          <div class="svc2-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.4" r="4.2"/><path d="M12 12.4v6.8"/><path d="M8 19.2h8"/></svg></div>
+          <h3 class="svc2-title">Landscaping &amp; Outdoor Works</h3>
+          <p class="svc2-desc">Patios, decking, groundworks and outdoor spaces designed and built to extend your home beyond its walls.</p>
+          <a class="svc2-link" href="#svc-landscaping">Read more <span class="svc2-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="svc2-card">
+        <div class="svc2-photo">
+          <img src="images/service-maintenance.jpg" alt="Modern detached house with black cladding, brick base and new driveway">
+        </div>
+        <div class="svc2-body">
+          <div class="svc2-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/><circle cx="6" cy="6" r="2.1"/><circle cx="18" cy="18" r="2.1"/></svg></div>
+          <h3 class="svc2-title">General Building &amp; Maintenance</h3>
+          <p class="svc2-desc">Brickwork, groundworks, external repairs and ongoing maintenance carried out by the same tradespeople who build your larger projects.</p>
+          <a class="svc2-link" href="#svc-maintenance">Read more <span class="svc2-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-detail">
+
+  <div class="detail-band band-light" id="svc-design">
+    <div class="detail-bleed">
+      <div class="detail-shape shape-right">
+        <svg class="detail-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M100,26 Q100,3 82,3 L4,3 L4,42 Q4,90 45,100 L100,100"/>
+            </svg>
+            <div class="detail-media">
+          <div class="media-image">
+            <img src="images/service-design-detail.jpg" alt="U-shaped kitchen with quartz worktops and induction hob, ready for handover">
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="detail-copy copy-left">
+          <div class="detail-index">01 &mdash; Design &amp; Planning</div>
+          <h3 class="detail-title">A clear, approved plan before we start on site</h3>
+          <p class="detail-text">Concept design, working drawings and planning applications are handled from the outset, so you know the scope, the look and the cost before a single tool is on site.</p>
+          <ul class="detail-points reveal-list">
+              <li>Concept design &amp; working drawings</li>
+              <li>Planning &amp; building control applications</li>
+              <li>Costed, agreed scope before we start</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-band band-dark" id="svc-loft">
+    <div class="detail-bleed">
+      <div class="detail-shape shape-left">
+        <svg class="detail-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0,26 Q0,3 18,3 L96,3 L96,42 Q96,90 55,100 L0,100"/>
+            </svg>
+            <div class="detail-media">
+          <div class="media-image">
+            <img src="images/service-loft-detail.jpg" alt="Finished loft conversion bedroom with dormer window seat and skylight">
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="detail-copy copy-right">
+          <div class="detail-index">02 &mdash; Loft &amp; Extensions</div>
+          <h3 class="detail-title">See the difference additional space makes</h3>
+          <p class="detail-text">From groundworks to roofline, we manage planning, building control and construction as one continuous programme &mdash; here's a recent loft conversion, finished and ready to use.</p>
+          <ul class="detail-points reveal-list">
+              <li>Single &amp; double-storey extensions</li>
+              <li>Loft conversions &amp; dormers</li>
+              <li>Planning &amp; building control handled for you</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-band band-light" id="svc-renovation">
+    <div class="detail-bleed">
+      <div class="detail-shape shape-right">
+        <svg class="detail-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M100,26 Q100,3 82,3 L4,3 L4,42 Q4,90 45,100 L100,100"/>
+            </svg>
+            <div class="detail-media">
+          <div class="media-image">
+            <img src="images/service-renovation-detail.jpg" alt="Navy kitchen island with quartz worktop and integrated induction hob">
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="detail-copy copy-left">
+          <div class="detail-index">03 &mdash; Renovation &amp; Refurbishment</div>
+          <h3 class="detail-title">Every finish, held to the same standard</h3>
+          <p class="detail-text">Kitchens, bathrooms and full-house refurbishments are managed by the same team from strip-out to final fix, so tiling, joinery and plumbing are never left to chance between trades.</p>
+          <ul class="detail-points reveal-list">
+              <li>Kitchen &amp; bathroom refits</li>
+              <li>Structural alterations &amp; replastering</li>
+              <li>Bespoke tiling, stonework &amp; joinery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-band band-dark" id="svc-landscaping">
+    <div class="detail-bleed">
+      <div class="detail-shape shape-left">
+        <svg class="detail-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0,26 Q0,3 18,3 L96,3 L96,42 Q96,90 55,100 L0,100"/>
+            </svg>
+            <div class="detail-media">
+          <div class="media-image">
+            <img src="images/service-landscaping-detail.jpg" alt="New patio installation with sandstone paving in a family garden">
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="detail-copy copy-right">
+          <div class="detail-index">04 &mdash; Landscaping &amp; Outdoor Works</div>
+          <h3 class="detail-title">Outdoor spaces built to be used, not just looked at</h3>
+          <p class="detail-text">Patios, decking and groundworks are designed around how you actually use the garden, and built by the same team managing the rest of your project.</p>
+          <ul class="detail-points reveal-list">
+              <li>Patios, paving &amp; decking</li>
+              <li>Groundworks &amp; drainage</li>
+              <li>Garden &amp; boundary landscaping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-band band-light" id="svc-maintenance">
+    <div class="detail-bleed">
+      <div class="detail-shape shape-right">
+        <svg class="detail-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M100,26 Q100,3 82,3 L4,3 L4,42 Q4,90 45,100 L100,100"/>
+            </svg>
+            <div class="detail-media">
+          <div class="media-image">
+            <img src="images/service-maintenance-detail.jpg" alt="Landscaped rear garden with patio, artificial lawn and planting">
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="detail-copy copy-left">
+          <div class="detail-index">05 &mdash; General Building &amp; Maintenance</div>
+          <h3 class="detail-title">The same trades for the smaller jobs too</h3>
+          <p class="detail-text">Brickwork, groundworks, external repairs and ongoing maintenance are carried out by the same tradespeople who deliver our larger projects &mdash; no separate handyman standard.</p>
+          <ul class="detail-points reveal-list">
+              <li>Brickwork &amp; repointing</li>
+              <li>Groundworks &amp; drainage</li>
+              <li>Ongoing property maintenance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section team" id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-tag"><span class="rule"></span>The people behind the work</div>
+        <h2 class="sec-title">Our Team</h2>
+      </div>
+    </div>
+    <ul class="team-grid reveal-list">
+      <li>
+        <article class="team-card">
+          <div class="team-photo"><img src="images/charles.jpg" alt="Charles Ryland, Property &amp; Development Partner"></div>
+          <div class="team-info">
+            <h3 class="team-name">Charles Ryland</h3>
+            <p class="team-role">Property &amp; Development Partner</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="team-card">
+          <div class="team-photo"><img src="images/iurii.jpg" alt="Iurii Pylypets, CEO and Founder" style="object-position:center 10%"></div>
+          <div class="team-info">
+            <h3 class="team-name">Iurii Pylypets</h3>
+            <p class="team-role">CEO and Founder</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="team-card">
+          <div class="team-photo"><img src="images/maksym.jpg" alt="Maksym Chepurniy, Projects Director" style="object-position:center 38%"></div>
+          <div class="team-info">
+            <h3 class="team-name">Maksym Chepurniy</h3>
+            <p class="team-role">Projects Director</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="sec-head">
+    <div>
+      <div class="sec-tag"><span class="rule"></span>Client reviews</div>
+      <h2 class="sec-title">What our clients say</h2>
+    </div>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="rev-card">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">From the first assessment to the final snag list, everything ran exactly to the programme they gave us. No chasing, no surprises on cost.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">RH</div>
+          <div><div class="rev-name">Rebecca H.</div><div class="rev-role">Rear Extension, Witham</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">We've used CONCRAFT on three buy-to-let refurbishments now. Fixed price, fixed date, and the properties are always handed back rental-ready.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">DM</div>
+          <div><div class="rev-name">David M.</div><div class="rev-role">Property Investor</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">Our loft conversion was finished a week early and the quality of the joinery is honestly better than the rest of the house.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">SP</div>
+          <div><div class="rev-name">Sarah P.</div><div class="rev-role">Loft Conversion, Chelmsford</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">Having one project manager accountable for every trade made all the difference. Weekly updates meant we always knew where we stood.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">TW</div>
+          <div><div class="rev-name">Tom W.</div><div class="rev-role">Kitchen Renovation</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">They handled planning, party wall agreements and building control without us lifting a finger. Genuinely stress-free.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">EC</div>
+          <div><div class="rev-name">Emma C.</div><div class="rev-role">Side Return Extension</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">Brickwork, damp repair and a new patio all done by the same team to the same standard. Easy to recommend.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">GK</div>
+          <div><div class="rev-name">Graham K.</div><div class="rev-role">General Building &amp; Maintenance</div></div>
+        </div>
+      </div>
+      <!-- duplicate set for seamless loop -->
+      <div class="rev-card" aria-hidden="true">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">From the first assessment to the final snag list, everything ran exactly to the programme they gave us. No chasing, no surprises on cost.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">RH</div>
+          <div><div class="rev-name">Rebecca H.</div><div class="rev-role">Rear Extension, Witham</div></div>
+        </div>
+      </div>
+      <div class="rev-card" aria-hidden="true">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">We've used CONCRAFT on three buy-to-let refurbishments now. Fixed price, fixed date, and the properties are always handed back rental-ready.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">DM</div>
+          <div><div class="rev-name">David M.</div><div class="rev-role">Property Investor</div></div>
+        </div>
+      </div>
+      <div class="rev-card" aria-hidden="true">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">Our loft conversion was finished a week early and the quality of the joinery is honestly better than the rest of the house.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">SP</div>
+          <div><div class="rev-name">Sarah P.</div><div class="rev-role">Loft Conversion, Chelmsford</div></div>
+        </div>
+      </div>
+      <div class="rev-card" aria-hidden="true">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">Having one project manager accountable for every trade made all the difference. Weekly updates meant we always knew where we stood.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">TW</div>
+          <div><div class="rev-name">Tom W.</div><div class="rev-role">Kitchen Renovation</div></div>
+        </div>
+      </div>
+      <div class="rev-card" aria-hidden="true">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">They handled planning, party wall agreements and building control without us lifting a finger. Genuinely stress-free.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">EC</div>
+          <div><div class="rev-name">Emma C.</div><div class="rev-role">Side Return Extension</div></div>
+        </div>
+      </div>
+      <div class="rev-card" aria-hidden="true">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rev-quote">Brickwork, damp repair and a new patio all done by the same team to the same standard. Easy to recommend.</p>
+        <div class="rev-foot">
+          <div class="rev-avatar">GK</div>
+          <div><div class="rev-name">Graham K.</div><div class="rev-role">General Building &amp; Maintenance</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process section tight" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-tag"><span class="rule"></span>How we work</div>
+        <h2 class="sec-title">Assessment through to handover</h2>
+      </div>
+      <p class="sec-desc">Every project is run through the same four stages, so you always know what's happening, what's next, and who's responsible for it.</p>
+    </div>
+    <div class="steps">
+      <div class="step active">
+        <div class="step-no">01</div>
+        <div class="step-title">Assessment</div>
+        <div class="step-desc">We survey the property, understand the brief and the constraints, and set out what's achievable.</div>
+      </div>
+      <div class="step active">
+        <div class="step-no">02</div>
+        <div class="step-title">Planning</div>
+        <div class="step-desc">Design, specification, costing and programme are agreed and fixed before a single tool is on site.</div>
+      </div>
+      <div class="step active">
+        <div class="step-no">03</div>
+        <div class="step-title">Build</div>
+        <div class="step-desc">Our trades deliver the works to programme, with a dedicated manager reporting on progress weekly.</div>
+      </div>
+      <div class="step">
+        <div class="step-no">04</div>
+        <div class="step-title">Handover</div>
+        <div class="step-desc">Snagging, sign-off and documentation are completed before we hand back a finished space.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner" id="cta-banner">
+  <div class="banner-inner">
+    <h2>Ready to start planning your project?</h2>
+    <div class="banner-ctas">
+      <a class="cta-btn" href="tel:+447729001401">Call 07729 001401</a>
+      <a class="cta-btn ghost" href="mailto:info@concraft.co.uk">Email info@concraft.co.uk</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-tag"><span class="rule"></span>Recent work</div>
+        <h2 class="sec-title">A sample of finished projects</h2>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="g-item">
+        <img src="images/gal-loft-diner.jpg" alt="Vaulted loft conversion kitchen-diner with island and skylight">
+        <div class="g-cap"><div class="tag">Extension</div><div class="name">Loft conversion kitchen-diner</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-kitchen-navy.jpg" alt="Navy kitchen island with quartz worktop">
+        <div class="g-cap"><div class="tag">Renovation</div><div class="name">Kitchen island renovation</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-bath2.jpg" alt="Luxury marble effect bathroom renovation">
+        <div class="g-cap"><div class="tag">Renovation</div><div class="name">Marble-effect bathroom suite</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-patio2.jpg" alt="Landscaped patio with garden room and planting">
+        <div class="g-cap"><div class="tag">General Building</div><div class="name">Patio &amp; garden landscaping</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-ensuite.jpg" alt="Ensuite shower room renovation">
+        <div class="g-cap"><div class="tag">Renovation</div><div class="name">Ensuite shower room</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-fireplace2.jpg" alt="Marble feature fireplace with media wall">
+        <div class="g-cap"><div class="tag">Refurbishment</div><div class="name">Fireplace &amp; media wall</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-fireplace-concrete.jpg" alt="Modern feature fireplace with polished concrete surround">
+        <div class="g-cap"><div class="tag">Refurbishment</div><div class="name">Concrete &amp; marble fireplace</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-kitchen-white.jpg" alt="U-shaped kitchen renovation with quartz worktops">
+        <div class="g-cap"><div class="tag">Renovation</div><div class="name">U-shaped kitchen renovation</div></div>
+      </div>
+      <div class="g-item">
+        <img src="images/gal-garden2.jpg" alt="Landscaped rear garden with lawn and planting">
+        <div class="g-cap"><div class="tag">General Building</div><div class="name">Garden landscaping</div></div>
+      </div>
+    </div>
+
+    <div class="ba-block" id="before-after">
+      <h3 class="ba-title">Before &amp; After</h3>
+      <div class="ba-grid">
+        <figure class="ba-item">
+          <div class="ba-panes">
+            <div class="ba-pane"><span class="ba-tag">Before</span><img src="images/before-1.jpg" alt="Rear of semi-detached house before extension and loft conversion"></div>
+            <div class="ba-pane after"><span class="ba-tag">After</span><img src="images/after-1.jpg" alt="Rear of semi-detached house after extension and loft conversion, with dark cladding and bi-fold doors"></div>
+          </div>
+          <figcaption class="ba-cap">
+            <span class="ba-name">Rear extension &amp; loft conversion</span>
+            <span class="ba-meta">Semi-detached home</span>
+          </figcaption>
+        </figure>
+        <figure class="ba-item">
+          <div class="ba-panes">
+            <div class="ba-pane"><img src="images/before-2.jpg" alt="Rear of detached brick house before conservatory extension"></div>
+            <div class="ba-pane after"><img src="images/after-2.jpg" alt="Rear of detached brick house after conservatory extension with new patio"></div>
+          </div>
+          <figcaption class="ba-cap">
+            <span class="ba-name">Conservatory extension</span>
+            <span class="ba-meta">Detached home</span>
+          </figcaption>
+        </figure>
+        <figure class="ba-item is-portrait">
+          <div class="ba-panes">
+            <div class="ba-pane"><span class="ba-tag">Before</span><img src="images/before-3.jpg" alt="End-of-terrace house before exterior refurbishment, with peeling paint and worn render" style="object-position:center 25%"></div>
+            <div class="ba-pane after"><span class="ba-tag">After</span><img src="images/after-3.jpg" alt="End-of-terrace house after exterior refurbishment, freshly painted" style="object-position:center 10%"></div>
+          </div>
+          <figcaption class="ba-cap">
+            <span class="ba-name">Exterior refurbishment</span>
+            <span class="ba-meta">End-of-terrace home</span>
+          </figcaption>
+        </figure>
+        <figure class="ba-item is-portrait">
+          <div class="ba-panes">
+            <div class="ba-pane"><span class="ba-tag">Before</span><img src="images/before-4.jpg" alt="Rear garden mid-build, with bare soil, materials and a worker preparing the ground" style="object-position:center top"></div>
+            <div class="ba-pane after"><span class="ba-tag">After</span><img src="images/after-4.jpg" alt="Finished rear garden with new lawn, granite edging, planting beds, raised patio and fencing" style="object-position:center top"></div>
+          </div>
+          <figcaption class="ba-cap">
+            <span class="ba-name">Garden landscaping</span>
+            <span class="ba-meta">Detached home</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why section" id="why">
+  <div class="wrap why-grid">
+    <div>
+      <div class="sec-tag"><span class="rule"></span>Why CONCRAFT</div>
+      <h2 class="sec-title">Built on Experience. Focused on Your Home.</h2>
+      <p class="why-lede why-body">CONCRAFT brings the experience and expertise of Craftex into the residential sector, combining commercial construction standards with a personal approach to creating exceptional homes.</p>
+      <p class="why-lede why-body">From extensions and loft conversions to renovations, refurbishments and complete property transformations, we provide a seamless building service from design and planning through to completion.</p>
+      <p class="why-lede why-body">Our aim is simple &mdash; to take the complexity out of your project, manage every detail professionally and deliver a finished space that is built to last.</p>
+      <a class="why-more" href="https://craftex.co.uk/" target="_blank" rel="noopener">Discover Craftex <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="why-list reveal-list">
+      <div class="why-row">
+        <div class="why-mark">01</div>
+        <div>
+          <h4>Single point of accountability</h4>
+          <p>One project manager owns your programme from assessment to handover &mdash; no chasing separate trades or designers.</p>
+        </div>
+      </div>
+      <div class="why-row">
+        <div class="why-mark">02</div>
+        <div>
+          <h4>Fixed costing, no surprises</h4>
+          <p>Scope and price are agreed before work starts, with any variations approved by you before we proceed.</p>
+        </div>
+      </div>
+      <div class="why-row">
+        <div class="why-mark">03</div>
+        <div>
+          <h4>In-house, insured trades</h4>
+          <p>Our own tradespeople carry out the majority of the works, giving us direct control over quality and programme.</p>
+        </div>
+      </div>
+      <div class="why-row">
+        <div class="why-mark">04</div>
+        <div>
+          <h4>Investor-focused delivery</h4>
+          <p>For landlords and developers, we work to fixed timelines and provide reporting built around your return.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight find-us" id="find-us">
+  <div class="wrap find-grid">
+    <div class="find-info">
+      <div class="sec-tag"><span class="rule"></span>Find us</div>
+      <h2 class="sec-title">Based in Witham, working across the region</h2>
+      <p class="why-lede find-lede">Our office is in the centre of Witham, Essex &mdash; convenient for the towns and villages we build in across Essex and East London. Get in touch to talk through a project or arrange a site visit.</p>
+      <div class="find-detail">
+        <span class="find-label">Address</span>
+        <span class="find-value">Office 2, Middle Floor, 10 Guithavon Street, Witham, CM8 1BN</span>
+      </div>
+      <div class="find-detail">
+        <span class="find-label">Phone</span>
+        <span class="find-value"><a href="tel:+447729001401">07729 001401</a></span>
+      </div>
+      <div class="find-detail">
+        <span class="find-label">Email</span>
+        <span class="find-value">info@concraft.co.uk</span>
+      </div>
+      <div class="find-detail">
+        <span class="find-label">Hours</span>
+        <span class="find-value">Mon &ndash; Fri, 8:00 &ndash; 17:00</span>
+      </div>
+      <div class="find-detail">
+        <span class="find-label">Areas covered</span>
+        <span class="find-value">Witham, Colchester, Braintree, Tiptree, Maldon, Danbury, Chelmsford, Ingatestone, Brentwood, Shenfield, Romford, Chigwell, Loughton, Woodford &amp; London</span>
+      </div>
+      <a class="cta-btn" href="https://www.google.com/maps/search/?api=1&query=10+Guithavon+Street,+Witham,+CM8+1BN" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <div class="find-map">
+      <iframe
+        src="https://www.google.com/maps?q=10+Guithavon+Street,+Witham,+CM8+1BN,+UK&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="CONCRAFT office, 10 Guithavon Street, Witham">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <div class="faq-head">
+      <div class="sec-tag"><span class="rule"></span>FAQ</div>
+      <h2 class="sec-title">Frequently Asked Questions</h2>
+      <p class="faq-lede">Everything you need to know before starting your building project in Essex or London. Can't find an answer? Just give us a call.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q">
+          <span class="q-text">What areas do you cover?</span>
+          <span class="q-icon"></span>
+        </button>
+        <div class="faq-a"><p>We're based in Witham, Essex, and cover Witham, Colchester, Braintree, Tiptree, Maldon, Danbury, Chelmsford, Ingatestone, Brentwood, Shenfield, Romford, Chigwell, Loughton, Woodford and London. Not sure if you're in range? Get in touch with your postcode and we'll confirm.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="q-text">Do you handle planning permission and building control?</span>
+          <span class="q-icon"></span>
+        </button>
+        <div class="faq-a"><p>Yes. As main contractor we manage planning submissions, building control sign-off and any structural or party wall requirements as part of the planning stage &mdash; you don't need to coordinate this yourself.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="q-text">How is pricing worked out?</span>
+          <span class="q-icon"></span>
+        </button>
+        <div class="faq-a"><p>Every project starts with a site assessment, followed by a fixed quote based on an agreed scope of works. Any changes during the build are costed and approved by you before we proceed &mdash; no surprise invoices.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="q-text">Do you use subcontractors or your own trades?</span>
+          <span class="q-icon"></span>
+        </button>
+        <div class="faq-a"><p>The majority of work is carried out by our own in-house, insured trades. Where specialist subcontractors are required, they work under our direct site management to the same standard.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="q-text">How long does a typical extension or refurbishment take?</span>
+          <span class="q-icon"></span>
+        </button>
+        <div class="faq-a"><p>Timelines depend on scope, but a single-storey extension typically runs 10&ndash;16 weeks and a full refurbishment 4&ndash;8 weeks once planning and design are signed off. You'll receive a full programme at the planning stage.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="q-text">Can you work to an investor's timeline and budget?</span>
+          <span class="q-icon"></span>
+        </button>
+        <div class="faq-a"><p>Yes &mdash; our property refurbishment service is built around fixed costs and fixed completion dates, with weekly progress reporting so you can plan lettings or resale with confidence.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-form" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-intro">
+      <div class="sec-tag"><span class="rule"></span>Get in touch</div>
+      <h2 class="sec-title">Tell us about your project</h2>
+      <p class="why-lede contact-lede">Share a few details and we'll come back to you within one working day to arrange a site assessment.</p>
+
+      <div class="contact-detail">
+        <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <div class="contact-text">
+          <span class="find-label">Phone</span>
+          <span class="find-value"><a href="tel:+447729001401">07729 001401</a></span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+        <div class="contact-text">
+          <span class="find-label">Email</span>
+          <span class="find-value"><a href="mailto:info@concraft.co.uk">info@concraft.co.uk</a></span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div class="contact-text">
+          <span class="find-label">Office</span>
+          <span class="find-value">Office 2, Middle Floor, 10 Guithavon Street, Witham, CM8 1BN</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form-panel" id="contactForm" method="post" enctype="multipart/form-data">
+      <div class="form-row two">
+        <div class="field">
+          <label for="cf-name">Full name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Jane Smith" required>
+        </div>
+        <div class="field">
+          <label for="cf-phone">Phone number</label>
+          <input type="tel" id="cf-phone" name="phone" placeholder="07000 000000">
+        </div>
+      </div>
+      <div class="form-row two">
+        <div class="field">
+          <label for="cf-email">Email address</label>
+          <input type="email" id="cf-email" name="email" placeholder="jane@email.com" required>
+        </div>
+        <div class="field">
+          <label for="cf-service">Service required</label>
+          <select id="cf-service" name="service">
+            <option value="">Select an option</option>
+            <option>Design &amp; Planning</option>
+            <option>Loft &amp; Extensions</option>
+            <option>Renovation &amp; Refurbishment</option>
+            <option>Landscaping &amp; Outdoor Works</option>
+            <option>General Building &amp; Maintenance</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="cf-message">Tell us about your project</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Property type, rough scope, timeframe..."></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field upload-field">
+          <span class="upload-label">Add photos <em>(optional)</em></span>
+          <input type="file" id="cf-photos" name="photos" class="upload-input" accept="image/*,.heic,.heif" multiple>
+          <label class="upload-drop" id="uploadDrop" for="cf-photos">
+            <svg class="upload-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.1a1 1 0 0 0 .8-.4l.9-1.2a1 1 0 0 1 .8-.4h3.8a1 1 0 0 1 .8.4l.9 1.2a1 1 0 0 0 .8.4h1.1A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5z"/><circle cx="12" cy="12.5" r="3.2"/></svg>
+            <span class="upload-text"><strong>Choose photos</strong><span class="upload-drag"> or drag them here</span></span>
+            <span class="upload-hint">JPG, PNG, WebP or HEIC &middot; up to 5 photos &middot; 10 MB each</span>
+          </label>
+          <p class="upload-msg" id="uploadMsg" role="status" aria-live="polite"></p>
+          <ul class="upload-list" id="uploadList"></ul>
+        </div>
+      </div>
+      <div class="form-row form-foot">
+        <p class="form-note">By submitting, you agree to be contacted about your enquiry. See our <a href="privacy.html">Privacy Policy</a> for how we use your details.</p>
+        <button type="submit" class="cta-btn">Send enquiry</button>
+      </div>
+      <p class="form-success" id="formSuccess">Thanks &mdash; your enquiry has been sent. We'll be in touch within one working day.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#top">
+          <img src="images/logo-concraft.png" alt="CONCRAFT" class="logo-full">
+        </a>
+        <div class="foot-brand-text">
+        <p>A professional main contractor managing renovations, extensions, loft conversions and refurbishments from initial assessment through to completion and handover.</p>
+      <!-- Social links: replace each href="#" with the real profile URL -->
+      <ul class="foot-socials">
+      <li><a href="#" target="_blank" rel="noopener" aria-label="CONCRAFT on Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></li>
+      <li><a href="#" target="_blank" rel="noopener" aria-label="CONCRAFT on YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></li>
+      <li><a href="#" target="_blank" rel="noopener" aria-label="CONCRAFT on X / Twitter" title="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a></li>
+      <li><a href="#" target="_blank" rel="noopener" aria-label="CONCRAFT on Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a></li>
+      <li><a href="#" target="_blank" rel="noopener" aria-label="CONCRAFT on Telegram" title="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a></li>
+      </ul>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Services</h5>
+        <a href="#svc-design">Design &amp; Planning</a>
+        <a href="#svc-loft">Loft &amp; Extensions</a>
+        <a href="#svc-renovation">Renovation &amp; Refurbishment</a>
+        <a href="#svc-landscaping">Landscaping &amp; Outdoor Works</a>
+        <a href="#svc-maintenance">General Building &amp; Maintenance</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="#process">Our Process</a>
+        <a href="#team">Our Team</a>
+        <a href="#projects">Projects</a>
+        <a href="#why">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <p class="foot-contact"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+447729001401">07729 001401</a></p>
+        <p class="foot-contact"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@concraft.co.uk">info@concraft.co.uk</a></p>
+        <p class="foot-contact"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Office 2, Middle Floor,<br>10 Guithavon Street,<br>Witham, CM8 1BN</span></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-bottom-left">
+        <span>&copy; 2026 CONCRAFT. All rights reserved.</span>
+        <nav class="foot-legal" aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+      <span>Main Contractor &mdash; Renovations &middot; Extensions &middot; Refurbishment &middot; Maintenance</span>
+    </div>
+  </div>
+</footer>
+
+  <!-- WhatsApp: update the phone number below if it ever changes -->
+  <a class="wa-float" href="https://wa.me/447729001401" target="_blank" rel="noopener" aria-label="Chat with CONCRAFT on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
