@@ -731,13 +731,11 @@
       <a class="cta-btn" href="https://www.google.com/maps/search/?api=1&query=10+Guithavon+Street,+Witham,+CM8+1BN" target="_blank" rel="noopener">Get directions</a>
     </div>
     <div class="find-map">
-      <div class="map-placeholder" id="mapPlaceholder">
-        <strong>Find us in Witham</strong>
-        <p>Allow Google Maps to see our location here. Google may use cookies and receive your IP address when the map loads.</p>
-        <button type="button" class="cookie-button" data-allow-map hidden>Allow Google Maps</button>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=10+Guithavon+Street,+Witham,+CM8+1BN" target="_blank" rel="noopener">Open directions on Google Maps ↗</a>
+      <div id="mapEmbed">
+        <iframe src="https://www.google.com/maps?q=10+Guithavon+Street,+Witham,+CM8+1BN,+UK&amp;output=embed"
+          title="CONCRAFT office, 10 Guithavon Street, Witham" width="100%" height="100%"
+          referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
-      <div id="mapEmbed" hidden></div>
     </div>
   </div>
 </section>
