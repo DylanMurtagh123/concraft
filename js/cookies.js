@@ -7,7 +7,7 @@
   var banner = document.createElement('section');
   banner.className = 'cookie-banner';
   banner.setAttribute('aria-label', 'Cookie preferences');
-  banner.innerHTML = '<div><h2>YOUR COOKIE CHOICE</h2><p>We use an optional Google Maps embed, which may set cookies. It stays off unless you allow it. We remember your choice for six months.</p><a href="privacy.html#cookies">Read our cookie policy</a></div><div class="cookie-actions"><button type="button" class="cookie-button" data-reject>Reject optional cookies</button><button type="button" class="cookie-button" data-accept>Allow Google Maps</button></div>';
+  banner.innerHTML = '<div><h2>YOUR COOKIE CHOICE</h2><p>We use an optional Google Maps embed, which may set cookies. It stays off unless you allow it. We remember your choice for six months.</p><a href="privacy.html#cookies">Read our cookie policy</a></div><div class="cookie-actions"><button type="button" class="cookie-button" data-reject>Reject optional cookies</button><button type="button" class="cookie-button" data-accept>Allow</button></div>';
   document.body.appendChild(banner);
   function readChoice() {
     try {
