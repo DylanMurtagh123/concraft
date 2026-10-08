@@ -7,6 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cookies.css">
+<link rel="canonical" href="https://concraft.uk/">
+<meta name="description" content="CONCRAFT provides renovations, extensions, refurbishment and building maintenance in Essex and London. Contact our Witham team to discuss your project.">
 </head>
 <body>
 
@@ -555,7 +558,7 @@
     <h2>Ready to start planning your project?</h2>
     <div class="banner-ctas">
       <a class="cta-btn" href="tel:+447729001401">Call 07729 001401</a>
-      <a class="cta-btn ghost" href="mailto:info@concraft.co.uk">Email info@concraft.co.uk</a>
+      <a class="cta-btn ghost" href="mailto:info@concraft.uk">Email info@concraft.uk</a>
     </div>
   </div>
 </section>
@@ -715,7 +718,7 @@
       </div>
       <div class="find-detail">
         <span class="find-label">Email</span>
-        <span class="find-value">info@concraft.co.uk</span>
+        <span class="find-value">info@concraft.uk</span>
       </div>
       <div class="find-detail">
         <span class="find-label">Hours</span>
@@ -728,11 +731,13 @@
       <a class="cta-btn" href="https://www.google.com/maps/search/?api=1&query=10+Guithavon+Street,+Witham,+CM8+1BN" target="_blank" rel="noopener">Get directions</a>
     </div>
     <div class="find-map">
-      <iframe
-        src="https://www.google.com/maps?q=10+Guithavon+Street,+Witham,+CM8+1BN,+UK&output=embed"
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" title="CONCRAFT office, 10 Guithavon Street, Witham">
-      </iframe>
+      <div class="map-placeholder" id="mapPlaceholder">
+        <strong>Find us in Witham</strong>
+        <p>Allow Google Maps to see our location here. Google may use cookies and receive your IP address when the map loads.</p>
+        <button type="button" class="cookie-button" data-allow-map hidden>Allow Google Maps</button>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=10+Guithavon+Street,+Witham,+CM8+1BN" target="_blank" rel="noopener">Open directions on Google Maps ↗</a>
+      </div>
+      <div id="mapEmbed" hidden></div>
     </div>
   </div>
 </section>
@@ -809,7 +814,7 @@
         <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
         <div class="contact-text">
           <span class="find-label">Email</span>
-          <span class="find-value"><a href="mailto:info@concraft.co.uk">info@concraft.co.uk</a></span>
+          <span class="find-value"><a href="mailto:info@concraft.uk">info@concraft.uk</a></span>
         </div>
       </div>
       <div class="contact-detail">
@@ -821,7 +826,10 @@
       </div>
     </div>
 
-    <form class="contact-form-panel" id="contactForm" method="post" enctype="multipart/form-data">
+    <form class="contact-form-panel" id="contactForm" action="https://formsubmit.co/info@concraft.uk" method="POST">
+      <input type="hidden" name="_subject" value="CONCRAFT website enquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="form-row two">
         <div class="field">
           <label for="cf-name">Full name</label>
@@ -853,27 +861,13 @@
       <div class="form-row">
         <div class="field">
           <label for="cf-message">Tell us about your project</label>
-          <textarea id="cf-message" name="message" rows="5" placeholder="Property type, rough scope, timeframe..."></textarea>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="field upload-field">
-          <span class="upload-label">Add photos <em>(optional)</em></span>
-          <input type="file" id="cf-photos" name="photos" class="upload-input" accept="image/*,.heic,.heif" multiple>
-          <label class="upload-drop" id="uploadDrop" for="cf-photos">
-            <svg class="upload-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.1a1 1 0 0 0 .8-.4l.9-1.2a1 1 0 0 1 .8-.4h3.8a1 1 0 0 1 .8.4l.9 1.2a1 1 0 0 0 .8.4h1.1A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5z"/><circle cx="12" cy="12.5" r="3.2"/></svg>
-            <span class="upload-text"><strong>Choose photos</strong><span class="upload-drag"> or drag them here</span></span>
-            <span class="upload-hint">JPG, PNG, WebP or HEIC &middot; up to 5 photos &middot; 10 MB each</span>
-          </label>
-          <p class="upload-msg" id="uploadMsg" role="status" aria-live="polite"></p>
-          <ul class="upload-list" id="uploadList"></ul>
+          <textarea id="cf-message" name="message" rows="5" required placeholder="Property type, rough scope, timeframe..."></textarea>
         </div>
       </div>
       <div class="form-row form-foot">
-        <p class="form-note">By submitting, you agree to be contacted about your enquiry. See our <a href="privacy.html">Privacy Policy</a> for how we use your details.</p>
+        <p class="form-note">By submitting, you agree to be contacted about your enquiry. Your details are sent through FormSubmit; you may be asked to complete a spam check. See our <a href="privacy.html">Privacy Policy</a> for how we use your details.</p>
         <button type="submit" class="cta-btn">Send enquiry</button>
       </div>
-      <p class="form-success" id="formSuccess">Thanks &mdash; your enquiry has been sent. We'll be in touch within one working day.</p>
     </form>
   </div>
 </section>
@@ -916,7 +910,7 @@
       <div class="foot-col">
         <h5>Contact</h5>
         <p class="foot-contact"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+447729001401">07729 001401</a></p>
-        <p class="foot-contact"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@concraft.co.uk">info@concraft.co.uk</a></p>
+        <p class="foot-contact"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@concraft.uk">info@concraft.uk</a></p>
         <p class="foot-contact"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Office 2, Middle Floor,<br>10 Guithavon Street,<br>Witham, CM8 1BN</span></p>
       </div>
     </div>
@@ -925,6 +919,8 @@
         <span>&copy; 2026 CONCRAFT. All rights reserved.</span>
         <nav class="foot-legal" aria-label="Legal">
           <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html#cookies">Cookie Policy</a>
+          <button type="button" class="cookie-settings" data-cookie-settings hidden>Cookie settings</button>
           <a href="terms.html">Terms &amp; Conditions</a>
         </nav>
       </div>
@@ -939,6 +935,7 @@
   </a>
 
   <script src="js/main.js"></script>
+  <script src="js/cookies.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,16 @@
+.cookie-banner[hidden], .cookie-settings[hidden], .map-placeholder[hidden], #mapEmbed[hidden], [data-allow-map][hidden] { display:none !important; }
+.cookie-banner { position:fixed; z-index:10000; bottom:20px; left:20px; right:20px; max-width:1080px; margin:auto; padding:24px; background:#fff; color:var(--navy); border:1px solid #cbd4e0; border-top:4px solid var(--accent); box-shadow:0 8px 40px #0003; display:flex; align-items:center; gap:28px; max-height:calc(100dvh - 40px); overflow:auto; }
+.cookie-banner h2 { font-size:26px; line-height:1.1; }
+.cookie-banner p { font-size:14px; line-height:1.6; margin:10px 0; max-width:620px; }
+.cookie-banner a, .map-placeholder a { text-decoration:underline; text-underline-offset:3px; font-size:13px; }
+.cookie-actions { display:flex; flex-direction:column; gap:10px; flex-shrink:0; }
+.cookie-button { border:1px solid var(--navy); background:var(--navy); color:white; font:600 13px/1.4 'Inter',sans-serif; padding:13px 18px; min-height:44px; cursor:pointer; }
+.cookie-button:hover { background:var(--accent-dark); }
+.cookie-button:focus-visible, .cookie-settings:focus-visible, .cookie-banner a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+.cookie-settings { border:0; padding:0; background:none; color:inherit; font:inherit; cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
+.map-placeholder { min-height:350px; height:100%; padding:40px 28px; background:var(--paper); color:var(--navy); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; text-align:center; }
+.map-placeholder strong { font-size:24px; }
+.map-placeholder p { margin:0; max-width:360px; font-size:14px; line-height:1.6; }
+#mapEmbed { height:100%; min-height:350px; }
+#mapEmbed iframe { display:block; min-height:350px; border:0; }
+@media(max-width:640px) { .cookie-banner { bottom:10px; left:10px; right:10px; padding:18px; flex-direction:column; align-items:stretch; gap:16px; max-height:calc(100dvh - 20px); } .cookie-actions { gap:8px; } .cookie-banner h2 { font-size:23px; } }
