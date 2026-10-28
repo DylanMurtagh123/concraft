@@ -824,7 +824,7 @@
       </div>
     </div>
 
-    <form class="contact-form-panel" id="contactForm" action="https://formsubmit.co/info@concraft.uk" method="POST">
+    <form class="contact-form-panel" id="contactForm" action="https://formsubmit.co/info@concraft.uk" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="_subject" value="CONCRAFT website enquiry">
       <input type="hidden" name="_template" value="table">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -860,6 +860,21 @@
         <div class="field">
           <label for="cf-message">Tell us about your project</label>
           <textarea id="cf-message" name="message" rows="5" required placeholder="Property type, rough scope, timeframe..."></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label class="upload-label" for="cf-photos">Add photos <em>(optional)</em></label>
+          <input class="upload-input" type="file" id="cf-photos" name="attachment" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" multiple aria-describedby="cf-photos-hint cf-photos-status cf-photos-error">
+          <label class="upload-drop" for="cf-photos">
+            <svg class="upload-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h4l2-3h4l2 3h4v15H4z"/><circle cx="12" cy="13" r="4"/></svg>
+            <span class="upload-text"><strong>Choose photos</strong></span>
+            <span class="upload-hint" id="cf-photos-hint">JPG, PNG or WebP &middot; up to 5 photos &middot; 10 MB total</span>
+          </label>
+          <span class="upload-hint" id="cf-photos-status" role="status"></span>
+          <p class="upload-msg" id="cf-photos-error" role="alert"></p>
+          <button type="button" id="cf-photos-clear" class="cta-btn" hidden>Clear photos</button>
+          <noscript><span class="upload-hint">Choose up to 5 photos, no more than 10 MB combined. JavaScript is required to check these limits before sending.</span></noscript>
         </div>
       </div>
       <div class="form-row form-foot">
